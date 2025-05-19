@@ -1,0 +1,165 @@
+[
+  {
+    "Name": "Klei Kodesh Project",
+    "Description": "Tools for the jewish editor",
+    "Url": "https://kleikodesh.github.io/",
+    "IsVisible": true
+  },
+  {
+    "Name": "Dicta",
+    "Description": "Hebrew language tools and corpus.",
+    "Url": "https://dicta.org.il/tools",
+    "IsVisible": true
+  },
+  {
+    "Name": "Otzar HaHochma Tablet",
+    "Description": "Otzar HaHochma digital Jewish book library.",
+    "Url": "https://tablet.otzar.org/",
+    "IsVisible": true
+  },
+  {
+    "Name": "FJMS Genizah",
+    "Description": "Digital Genizah fragments and study tools.",
+    "Url": "https://fjms.genizah.org/",
+    "IsVisible": true
+  },
+  {
+    "Name": "HebrewBooks Mobile",
+    "Description": "HebrewBooks.org with browsing by subject.",
+    "Url": "https://m.hebrewbooks.org/sites/mobile/index.html#browsebysubject",
+    "IsVisible": true
+  },
+  {
+    "Name": "Hamichlol wiki",
+    "Description": "The Jewish Encyclopedia",
+    "Url": "https://www.hamichlol.org.il/",
+    "IsVisible": true
+  },
+  {
+    "Name": "Tora Forum",
+    "Description": "Discussion forum for Torah topics.",
+    "Url": "https://tora-forum.co.il/",
+    "IsVisible": true
+  },
+  {
+    "Name": "Halacha Brura Library",
+    "Description": "Online access to the Halacha Brura project.",
+    "Url": "http://www.halachabrura.org/library/library8a.htm",
+    "IsVisible": true
+  },
+  {
+    "Name": "Jewish Books Wiki",
+    "Description": "A wiki focused on Jewish texts and sources.",
+    "Url": "https://wiki.jewishbooks.org.il/",
+    "IsVisible": true
+  },
+  {
+    "Name": "Torat Emet Freeware",
+    "Description": "Downloadable Jewish texts and software.",
+    "Url": "http://www.toratemetfreeware.com/",
+    "IsVisible": true
+  },
+  {
+    "Name": "AlHaTorah Library",
+    "Description": "Extensive Torah library and tools.",
+    "Url": "https://library.alhatorah.org/",
+    "IsVisible": true
+  },
+  {
+    "Name": "Keter Project",
+    "Description": "Access to classic Jewish texts.",
+    "Url": "https://www.mgketer.org/",
+    "IsVisible": true
+  },
+  {
+    "Name": "Wikisource - Jewish Bookshelf",
+    "Description": "Jewish texts on Hebrew Wikisource.",
+    "Url": "https://he.wikisource.org/wiki/ויקיטקסט:ארון_הספרים_היהודי",
+    "IsVisible": true
+  },
+  {
+    "Name": "Dicta Library",
+    "Description": "Collection of Typed Jewish texts",
+    "Url": "https://library.dicta.org.il/",
+    "IsVisible": true
+  },
+  {
+    "Name": "Shitufta",
+    "Description": "Collaborative Jewish text research project.",
+    "Url": "https://shitufta.org.il/",
+    "IsVisible": true
+  },
+  {
+    "Name": "Ta_Shma",
+    "Description": "Platform for studying Jewish texts.",
+    "Url": "https://tashma.jewishoffice.co.il/",
+    "IsVisible": true
+  },
+  {
+    "Name": "The Mercava",
+    "Description": "Interactive Torah learning platform.",
+    "Url": "https://www.themercava.com/",
+    "IsVisible": true
+  },
+  {
+    "Name": "Daf Yomi",
+    "Description": "Daily Talmud study resources.",
+    "Url": "https://daf-yomi.com/",
+    "IsVisible": true
+  },
+  {
+    "Name": "Base HaSefer",
+    "Description": "Jewish book database.",
+    "Url": "http://www.basehasefer.com/",
+    "IsVisible": true
+  },
+  {
+    "Name": "Aspaklaria",
+    "Description": "Jewish concept encyclopedia.",
+    "Url": "http://www.aspaklaria.info/",
+    "IsVisible": true
+  },
+
+  {
+    "Name": "Netivot HaShas",
+    "Description": "Talmudic indices and tools.",
+    "Url": "http://www.netivothashas.org.il/",
+    "IsVisible": true
+  },
+  {
+    "Name": "Torah Anytime",
+    "Description": "Video library of Torah lectures.",
+    "Url": "https://www.torahanytime.com/",
+    "IsVisible": false
+  },
+  {
+    "Name": "Kol HaLashon",
+    "Description": "Audio Torah learning center.",
+    "Url": "https://www2.kolhalashon.com/#/regularSite/home",
+    "IsVisible": false
+  },
+  {
+    "Name": "ToraZoom",
+    "Description": "Platform for Torah video content.",
+    "Url": "https://torazoom.com/",
+    "IsVisible": false
+  },
+  {
+    "Name": "Dirshu",
+    "Description": "Organization for Torah learning and exams.",
+    "Url": "https://www.dirshu.co.il/",
+    "IsVisible": false
+  },
+  {
+    "Name": "Beinenu",
+    "Description": "Weekly Torah research materials.",
+    "Url": "http://beinenu.com/",
+    "IsVisible": false
+  },
+  {
+    "Name": "OpenAI",
+    "Description": "AI research and deployment company.",
+    "Url": "https://auth.openai.com/log-in",
+    "IsVisible": false
+  }
+]
