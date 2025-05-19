@@ -23,12 +23,12 @@ namespace WebSitesLib
         }
 
         private void GobackButton_Click(object sender, System.Windows.RoutedEventArgs e) =>
-            browser?.GoBack();
+            browser.WebView.GoBack();
 
         private void GoForwardButton_Click(object sender, System.Windows.RoutedEventArgs e) =>
-            browser?.GoForward();
+            browser.WebView.GoForward();
 
         private void RefreshButton_Click(object sender, System.Windows.RoutedEventArgs e) =>
-            browser?.CoreWebView2?.Reload();
+            browser.WebView.CoreWebView2?.Reload();
     }
 }

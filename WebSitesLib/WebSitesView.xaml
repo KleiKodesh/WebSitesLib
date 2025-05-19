@@ -9,8 +9,9 @@
              xmlns:ext="clr-namespace:WpfLib.Extensions;assembly=WpfLib"
              xmlns:sys="clr-namespace:System.Windows.Controls;assembly=PresentationFramework"
              xmlns:wv="clr-namespace:Microsoft.Web.WebView2.Wpf;assembly=Microsoft.Web.WebView2.Wpf"
+             xmlns:wvlib="clr-namespace:WebViewLib;assembly=WebViewLib"
              mc:Ignorable="d" 
-             d:DesignHeight="450" Width="350"
+             d:DesignHeight="450" MinWidth="350"
              FontSize="14"
              FontFamily="Tahoma">
     <UserControl.DataContext>
@@ -86,11 +87,8 @@
         </Button>
         
         <!--<Separator Grid.Row="1" Grid.ColumnSpan="10" Height="2"/>-->
-
-        <wv:WebView2 x:Name="browser" 
-                       Grid.Row="2" 
-                       Grid.ColumnSpan="10"                       
-                       Source="{Binding SelectedValue, ElementName=AdressBar}">
-        </wv:WebView2>
+        <wvlib:WebViewHost  x:Name="browser" 
+            Grid.Row="2"  Grid.ColumnSpan="10"
+            Source="{Binding SelectedValue, ElementName=AdressBar}"/>
     </Grid>
 </UserControl>
