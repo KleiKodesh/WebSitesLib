@@ -10,6 +10,8 @@
              xmlns:sys="clr-namespace:System.Windows.Controls;assembly=PresentationFramework"
              xmlns:wv="clr-namespace:Microsoft.Web.WebView2.Wpf;assembly=Microsoft.Web.WebView2.Wpf"
              xmlns:wvlib="clr-namespace:WebViewLib;assembly=WebViewLib"
+             xmlns:hlp="clr-namespace:WpfLib.Helpers;assembly=WpfLib"
+             xmlns:conv="clr-namespace:WpfLib.Converters;assembly=WpfLib"
              mc:Ignorable="d" 
              d:DesignHeight="450" MinWidth="350"
              FontSize="14"
@@ -20,6 +22,7 @@
     
     <UserControl.Resources>
         <ResourceDictionary>
+            <conv:BoolToFlowDirectionConverter x:Key="BoolToFlowConverter"/>
             <sys:BooleanToVisibilityConverter x:Key="BooleanToVisibilityConverter"/>
             <ResourceDictionary.MergedDictionaries>
                 <ResourceDictionary Source="pack://application:,,,/WpfLib;component/Dictionaries/BaseDictionary.xaml"/>
@@ -28,7 +31,9 @@
     </UserControl.Resources>
     
     <Grid ap:GridSetup.Columns="auto * auto"
-          ap:GridSetup.Rows="auto auto *">
+          ap:GridSetup.Rows="auto auto *"
+           FlowDirection="{Binding Path=(hlp:LocaleDictionary.IsRtl), Converter={StaticResource BoolToFlowConverter}}">
+       
         
         <StackPanel Orientation="Horizontal" Margin="5">
             
