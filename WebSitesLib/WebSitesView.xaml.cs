@@ -12,8 +12,8 @@ namespace WebSitesLib
         public WebSitesView()
         {
             InitializeComponent();
-            string slectedIndex = Interaction.GetSetting(AppDomain.CurrentDomain.FriendlyName, "WebSitesView", "SelectedIndex", AdressBar.SelectedIndex.ToString());
-            if (int.TryParse(slectedIndex, out int index))
+            string selectedIndex = Interaction.GetSetting(AppDomain.CurrentDomain.FriendlyName, "WebSitesView", "SelectedIndex", AdressBar.SelectedIndex.ToString());
+            if (int.TryParse(selectedIndex, out int index))
                 AdressBar.SelectedIndex = index;
         }
 

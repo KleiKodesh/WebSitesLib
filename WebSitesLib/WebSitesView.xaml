@@ -31,8 +31,7 @@
     </UserControl.Resources>
     
     <Grid ap:GridSetup.Columns="auto * auto"
-          ap:GridSetup.Rows="auto auto *"
-           FlowDirection="{Binding Path=(hlp:LocaleDictionary.IsRtl), Converter={StaticResource BoolToFlowConverter}}">
+          ap:GridSetup.Rows="auto auto *">
        
         
         <StackPanel Orientation="Horizontal" Margin="5">
@@ -57,7 +56,7 @@
         </StackPanel>
 
         <Border Grid.Column="1" Margin="5"
-                BorderThickness="1" BorderBrush="{StaticResource Generic.LightBackGround}">
+                BorderThickness="1" BorderBrush="LightGray">
             <ComboBox x:Name="AdressBar"
                       IsEditable="True" 
                       FlowDirection="RightToLeft"
@@ -68,7 +67,8 @@
                       SelectionChanged="AdressBar_SelectionChanged">
                 <ComboBox.ItemTemplate>
                     <DataTemplate>
-                        <StackPanel Margin="3">
+                        <StackPanel Margin="3"
+                                    FlowDirection="{Binding Path=(hlp:LocaleDictionary.IsRtl), Converter={StaticResource BoolToFlowConverter}}">
                             <TextBlock Text="{Binding Name}"/>
                             <TextBlock Text="{Binding Description}"
                         Opacity="0.5" FontSize="10"/>
