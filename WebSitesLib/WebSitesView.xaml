@@ -15,7 +15,9 @@
              mc:Ignorable="d" 
              d:DesignHeight="450" MinWidth="350"
              FontSize="14"
-             FontFamily="Tahoma">
+             FontFamily="Tahoma"
+             Background="{Binding Path=(hlp:ThemeHelper.BackGround)}">
+    
     <UserControl.DataContext>
         <local:WebSitesViewModel/>
     </UserControl.DataContext>
@@ -59,19 +61,19 @@
                 BorderThickness="1" BorderBrush="LightGray">
             <ComboBox x:Name="AdressBar"
                       IsEditable="True" 
-                      FlowDirection="RightToLeft"
+                      FlowDirection="{Binding Path=(hlp:LocaleDictionary.FlowDirection)}"
                       ItemsSource="{Binding Adresses}"
                       SelectedValuePath="Url"
                       BorderThickness="0"
                       SelectedIndex="0"
-                      SelectionChanged="AdressBar_SelectionChanged">
+                      SelectionChanged="AdressBar_SelectionChanged"
+                      HorizontalContentAlignment="Left">
                 <ComboBox.ItemTemplate>
                     <DataTemplate>
-                        <StackPanel Margin="3"
-                                    FlowDirection="{Binding Path=(hlp:LocaleDictionary.IsRtl), Converter={StaticResource BoolToFlowConverter}}">
+                        <StackPanel Margin="3">
                             <TextBlock Text="{Binding Name}"/>
                             <TextBlock Text="{Binding Description}"
-                        Opacity="0.5" FontSize="10"/>
+                                       Opacity="0.5" FontSize="10"/>
                         </StackPanel>
                         <DataTemplate.Triggers>
                             <DataTrigger Binding="{Binding IsVisible}" Value="false">

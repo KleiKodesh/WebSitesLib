@@ -13,26 +13,29 @@
         SizeToContent="WidthAndHeight"
         Title="{ext:Locale Text=White_list}"
         MaxHeight="350"
-        PreviewKeyDown="Window_PreviewKeyDown">
+        PreviewKeyDown="Window_PreviewKeyDown"
+        Background="{Binding Path=(helpers:ThemeHelper.BackGround)}"
+        Foreground="{Binding Path=(helpers:ThemeHelper.ForeGround)}"
+        FlowDirection="{Binding Path=(helpers:LocaleDictionary.FlowDirection)}">
 
     <Window.Resources>
         <ResourceDictionary>
             <ResourceDictionary.MergedDictionaries>
                 <ResourceDictionary Source="pack://application:,,,/WpfLib;component/Dictionaries/BaseDictionary.xaml"/>
+                <ResourceDictionary Source="pack://application:,,,/WpfLib;component/Dictionaries/ThemedWindowDictionary.xaml"/>
             </ResourceDictionary.MergedDictionaries>
         </ResourceDictionary>
     </Window.Resources>
 
     <Window.Style>
-        <Style TargetType="Window">
-            <Setter Property="FlowDirection" Value="{Binding Path=(helpers:LocaleDictionary.IsRtl), Converter={StaticResource FlowDirectionConverter}}"/>
-        </Style>
+        <Style TargetType="Window" BasedOn="{StaticResource ThemedToolWindowStyle}"/>
     </Window.Style>
 
     <Grid ap:GridSetup.Rows="* auto">
         
         <ListBox x:Name="Whitelist" x:FieldModifier="public" 
                  BorderBrush="LightGray"
+                 Background="Transparent"
                  ItemsSource="{Binding Adresses}"
                  dd:DragDrop.IsDragSource="True"
                  dd:DragDrop.IsDropTarget="True">
@@ -42,10 +45,12 @@
                         <CheckBox x:Name="checkBox" IsChecked="{Binding IsVisible}" 
                                   Margin="5"/>
                         <StackPanel x:Name="stackPanel">
-                            <TextBlock Text="{Binding Name}"/>
+                            <TextBlock Text="{Binding Name}"
+                                       Foreground="{Binding Foreground, RelativeSource={RelativeSource AncestorType=Window}}"/>
                             <TextBlock Text="{Binding Description}"
                                 Opacity="0.5" 
-                                FontSize="10"/>
+                                FontSize="10"
+                                       Foreground="{Binding Foreground, RelativeSource={RelativeSource AncestorType=Window}}"/>
                         </StackPanel>
                     </StackPanel>
                     <DataTemplate.Triggers>
