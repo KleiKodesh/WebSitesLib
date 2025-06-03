@@ -14,8 +14,8 @@
         Title="{ext:Locale Text=White_list}"
         MaxHeight="350"
         PreviewKeyDown="Window_PreviewKeyDown"
-        Background="{Binding Path=(helpers:ThemeHelper.BackGround)}"
-        Foreground="{Binding Path=(helpers:ThemeHelper.ForeGround)}"
+        Background="{Binding Path=(helpers:ThemeHelper.Background)}"
+        Foreground="{Binding Path=(helpers:ThemeHelper.Foreground)}"
         FlowDirection="{Binding Path=(helpers:LocaleDictionary.FlowDirection)}">
 
     <Window.Resources>
