@@ -67,7 +67,7 @@
                       ItemsSource="{Binding Adresses}"
                       SelectedValuePath="Url"
                       BorderThickness="0"
-                      SelectedIndex="0"
+                      SelectedIndex="-1"
                       SelectionChanged="AdressBar_SelectionChanged"
                       HorizontalContentAlignment="Left">
                 <ComboBox.ItemTemplate>
